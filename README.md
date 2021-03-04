@@ -2,7 +2,7 @@
 
 ## 106021226 蔡皓宇
 
-## 使用說明
+## **使用說明**
 
 使用 make指令可直接 compile and run
 若已經compile過，可使用 make run指令
@@ -10,10 +10,10 @@ make clean可清除多餘檔案
 
 接著直接輸入 16 進位整數將會自動輸出四則運算的結果
 
-## Output Result
+## **Output Result**
 ![demo.png](image/demo.png "this is demo result")
 
-##code 講解
+## **code 講解**
 
 大數運算的主要要點就是使用直式模擬運算，
 並將結果儲存成string
@@ -81,7 +81,7 @@ void BigNumber::divide(string L, string R, string &out)
 下一個迴圈將會繼續測試「可能的商」乘以12 最接近 40 但 小於 40 的值
 以此類推，最後完成除法操作。
 
-##例外
+## **例外**
 除以0的部分
 不論是除法還是取餘數
 遇到除以0的部分均採用
@@ -100,7 +100,7 @@ if (this->getString() == "NaN")
 因此有NaN出現後，對NaN做任何運算仍會回傳NaN
 **output**
 ![NaN.png](image/NaN.png "NaN")
-##總結
+## **總結**
 大數運算的要點在於將input的字串或是string轉換成整數陣列，
 (於c++用vector實作可以有更多的擴充性與方便性)
 此次作業的目標為完成運算子的多載，有利於往後作業使用大數進行操作，
